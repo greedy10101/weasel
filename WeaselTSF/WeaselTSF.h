@@ -115,7 +115,8 @@ class WeaselTSF : public ITfTextInputProcessorEx,
   void _EndComposition(com_ptr<ITfContext> pContext, BOOL clear);
   BOOL _ShowInlinePreedit(com_ptr<ITfContext> pContext,
                           const std::shared_ptr<weasel::Context> context);
-  void _UpdateComposition(com_ptr<ITfContext> pContext);
+  /* Old Game Com */
+  /* void _UpdateComposition(com_ptr<ITfContext> pContext); */
   BOOL _IsComposing();
   void _SetComposition(com_ptr<ITfComposition> pComposition);
   void _SetCompositionPosition(const RECT& rc);
